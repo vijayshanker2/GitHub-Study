@@ -1,0 +1,12 @@
+ul{
+  width:100px;
+  color: blue;
+  padding: 4px;
+  text-align: left;
+  border: red;
+  border-style: solid;
+  border-collapse: collapse;
+}
+body{
+  margin:30px;
+}
