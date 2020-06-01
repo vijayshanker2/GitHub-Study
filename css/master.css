@@ -1,12 +1,10 @@
-ul{
-  width:100px;
-  color: blue;
-  padding: 4px;
-  text-align: left;
-  border: red;
-  border-style: solid;
-  border-collapse: collapse;
+#grid{
+  width:360px;
+  height:360px;
+  border:1px solid black;
+  background-color: #CDCDCD;
 }
+
 body{
   margin:30px;
 }
