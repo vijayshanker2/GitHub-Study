@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="{{url_for('hello')}}" method="post">
+  <input type="text" name="enternote" placeholder="Enter a note...">
+  <button>Submit</button>
+</form>
+
+<h2>Previous Notes</h2>
+<div style="margin:20px">
+  <ul>
+    {% for note in notes %}
+    <li>{{note}}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
