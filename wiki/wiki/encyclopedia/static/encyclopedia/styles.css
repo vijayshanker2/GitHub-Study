@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.description{
+  height : 100px;
+  width: 70%;
+}
+.title{
+  height : 40px;
+  width:30%;
+}
+
+
+.main {
+    padding-left: 25px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+
+
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding-left: 40px;
+    border-right: 1px solid grey;
+}

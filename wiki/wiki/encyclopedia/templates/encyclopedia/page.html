@@ -1,0 +1,25 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+{{name}}
+{% endblock %}
+
+{% block nav %}
+
+{% endblock %}
+
+{% block body %}
+
+<br>
+{{entries| safe}}
+
+<form action="{% url 'edit_page' name %}" method="get" name="edit page">
+  {{ pageform.non_field_errors }}
+  {% csrf_token %}
+  {{ editpageform }}
+<br><br><br>
+  <input type="submit" name="page edit" value="Edit">
+</form>
+
+{% endblock %}

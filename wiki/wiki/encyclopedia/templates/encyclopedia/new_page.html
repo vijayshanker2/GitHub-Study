@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{{name}}
+{% endblock %}
+
+{% block body %}
+
+<h3>Create a new Page</h3>
+
+{% if alert %}
+<script>
+alert("This entry already exists");
+</script>
+{% endif%}
+<br>
+<form action="new_page" method="post" class="pageform">
+  {{ pageform.non_field_errors }}
+  {% csrf_token %}
+  {{ pageform }}
+  <br>
+  <input type="submit" name="submit" value="Publish">
+</form>
+{% endblock %}
